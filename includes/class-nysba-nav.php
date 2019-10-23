@@ -115,7 +115,14 @@ class Nysba_Nav {
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-nysba-nav-admin.php';
-
+		
+		/**
+		 * This class is responsible for the form fields for the navigation
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-nysba-nav-menu-edit.php';
+		
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-nysba-form-fields.php';
+		
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
@@ -153,10 +160,16 @@ class Nysba_Nav {
 	private function define_admin_hooks() {
 
 		$plugin_admin = new Nysba_Nav_Admin( $this->get_plugin_name(), $this->get_version() );
-
+		
+		$this->loader->add_filter('wp_edit_nav_menu_walker', $plugin_admin, 'nysba_nav_menu_edit');
+		$this->loader->add_action('admin_init', $plugin_admin, 'nysba_add_meta_box');
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		$plugin_admin_form_fields = new Nysba_Form_Fields(self::get_plugin_name(), self::get_version());
+		$this->loader->add_filter('wp_setup_nav_menu_item', $plugin_admin_form_fields, 'nysba_add_data_to_menu_item');
+		$this->loader->add_action('wp_update_nav_menu_item', $plugin_admin_form_fields, 'nysba_nav_menu_save_fields', 10, 3);
+		$this->loader->add_action('wp_nav_menu_item_custom_fields', $plugin_admin_form_fields, 'nysba_add_megamenu_fields', 10, 4);
 	}
 
 	/**

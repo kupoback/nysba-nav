@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       NYSBA Navigation
  * Plugin URI:        https://github.com/kupoback/nysba-nav
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Custom NYSBA Navigation Control
  * Version:           1.0.0
  * Author:            Nick Makris | Clique Studios
  * Author URI:        https://cliquestudios.com/
