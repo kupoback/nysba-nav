@@ -1,0 +1,16 @@
+{
+	"name": "kupoback/nysba-nav",
+	"description": "",
+	"keywords": ["wordpress", "plugin"],
+	"homepage": "https://github.com/kupoback/nysba-nav",
+	"authors": [
+		{
+			"name": "Nick Makris",
+			"homepage": "https://makris.io"
+		}
+	],
+	"type": "wordpress-plugin",
+	"require": {
+		"php": ">=7.3"
+	}
+}
