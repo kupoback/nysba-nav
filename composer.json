@@ -1,7 +1,5 @@
 {
 	"name": "kupoback/nysba-nav",
-	"license": "GPL-2.0",
-	"version": "1.0.0",
 	"description": "",
 	"keywords": ["wordpress", "plugin"],
 	"homepage": "https://github.com/kupoback/nysba-nav",
@@ -13,6 +11,6 @@
 	],
 	"type": "wordpress-plugin",
 	"require": {
-		"php": ">=7.3"
+		"php": ">=7.2"
 	}
 }

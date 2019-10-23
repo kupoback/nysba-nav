@@ -4,4 +4,4 @@ This is a plugin custom made for handing the complex layout of [NYSBA](https://n
 
 ### Prerequisites
 * WordPress: 5.2.4
-* php: 7.3
+* php: 7.2
