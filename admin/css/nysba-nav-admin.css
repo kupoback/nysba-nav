@@ -10,7 +10,11 @@
   display: block;
 }
 
-.menu-item.menu-item-depth-0 .sub-level {
+.menu-item .hidden-field {
+  display: none;
+}
+
+.menu-item.menu-item-depth-0 .custom-meta-field {
   display: none;
 }
 
