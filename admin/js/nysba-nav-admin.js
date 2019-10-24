@@ -41,7 +41,7 @@ alert, confirm, console, prompt
 			var tabCheckbox = $('.field-submenu-tab-child-check input[type="checkbox"]');
 			var checkboxAttr = {
 				parent: '.field-submenu-content-check',
-				sibling: '.field-submenu-content'
+				sibling: '.field-description'
 			};
 			var dividerAttr = {
 				parent: '.field-submenu-divider',
