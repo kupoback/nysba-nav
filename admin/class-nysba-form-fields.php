@@ -82,8 +82,7 @@ class Nysba_Form_Fields
 			<label for="edit-menu-item-submenu-columns-<?php echo $item_id; ?>">
 				<?php esc_attr_e('Number of Sub Menu Columns', 'nysba-nav'); ?>
 				<select id="edit-menu-item-submenu-columns-<?php echo $item_id; ?>" class="widefat code edit-menu-item-submenu-columns" name="nysba-submenu-columns[<?php echo $item_id; ?>]">
-					<option value="">Auto</option>
-					<option value="1" <?php selected($item->nysba_submenu_columns, '1'); ?>>1</option>
+					<option value="">Select</option>
 					<option value="2" <?php selected($item->nysba_submenu_columns, '2'); ?>>2</option>
 					<option value="3" <?php selected($item->nysba_submenu_columns, '3'); ?>>3</option>
 				</select>

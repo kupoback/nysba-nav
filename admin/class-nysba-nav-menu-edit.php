@@ -207,7 +207,7 @@ class Nysba_Nav_Menu_Edit extends Walker_Nav_Menu
 					<?php _e('Open link in a new tab'); ?>
 				</label>
 			</p>
-			<p class="field-css-classes description description-thin">
+			<p class="field-css-classes description description-wide">
 				<label for="edit-menu-item-classes-<?php echo $item_id; ?>">
 					<?php _e('CSS Classes (optional)'); ?><br />
 					<input type="text" id="edit-menu-item-classes-<?php echo $item_id; ?>" class="widefat code edit-menu-item-classes" name="menu-item-classes[<?php echo $item_id; ?>]" value="<?php echo esc_attr(
@@ -218,7 +218,7 @@ class Nysba_Nav_Menu_Edit extends Walker_Nav_Menu
 					); ?>" />
 				</label>
 			</p>
-			<p class="field-xfn description description-thin">
+			<p class="field-xfn description description-wide">
 				<label for="edit-menu-item-xfn-<?php echo $item_id; ?>">
 					<?php _e('Link Relationship (XFN)'); ?><br />
 					<input type="text" id="edit-menu-item-xfn-<?php echo $item_id; ?>" class="widefat code edit-menu-item-xfn" name="menu-item-xfn[<?php echo $item_id; ?>]" value="<?php echo esc_attr($item->xfn); ?>" />
