@@ -74,7 +74,7 @@ class Nysba_Form_Fields
 
 		<p class="field-submenu-anchor-class description description-wide custom-meta-field" data-menu-id="<?= $item_id; ?>">
 			<label for="edit-menu-item-submenu-anchor-class-<?php echo $item_id; ?>"><?= __('Anchor Classes (Optional)', 'nysba-nav'); ?></label>
-			<input type="text" id="edit-menu-item-submenu-anchor-class-<?php echo $item_id; ?>" class="widefat code edit-menu-item-anchor-class" value="<?= sanitize_title($item->nysba_submenu_tab_child_id); ?>" name="nysba-submenu-anchor-class[<?php echo $item_id; ?>]" />
+			<input type="text" id="edit-menu-item-submenu-anchor-class-<?php echo $item_id; ?>" class="widefat code edit-menu-item-anchor-class" value="<?= $item->nysba_submenu_tab_child_id ?>" name="nysba-submenu-anchor-class[<?php echo $item_id; ?>]" />
 			<small class="help">Appends this class to the anchor tag unlike above, which appends to the list item</small>
 		</p>
 
