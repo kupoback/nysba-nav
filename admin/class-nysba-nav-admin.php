@@ -124,15 +124,12 @@ class Nysba_Nav_Admin
 		$field_names = [
 			'nysba-submenu-anchor-class',
 			'nysba-submenu-columns',
-			'nysba-submenu-column-width',
 			'nysba-submenu-tab-header',
 			'nysba-submenu-tab-child-check',
 			'nysba-submenu-tab-child-id',
 			'nysba-submenu-divider',
 			'nysba-submenu-content-check',
-			'nysba-submenu-content',
 			'nysba-submenu-shortcode',
-			//		'nysba-submenu-footer'
 		];
 		
 		return $field_names;
