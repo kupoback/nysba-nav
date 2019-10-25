@@ -162,7 +162,6 @@ class Nysba_Nav {
 		$plugin_admin = new Nysba_Nav_Admin( $this->get_plugin_name(), $this->get_version() );
 		
 		$this->loader->add_filter('wp_edit_nav_menu_walker', $plugin_admin, 'nysba_nav_menu_edit');
-		$this->loader->add_action('admin_init', $plugin_admin, 'nysba_add_meta_box');
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 

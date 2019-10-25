@@ -138,47 +138,4 @@ class Nysba_Nav_Admin
 		return $field_names;
 	}
 	
-	public function nysba_add_meta_box()
-	{
-		add_meta_box(
-			'shortcode_metabox',
-			__('Shortcode Metaboxes'),
-			[ $this, 'nysba_metabox' ],
-			'nav-menus',
-			'side',
-			'low'
-		);
-	}
-	
-	public function nysba_metabox()
-	{
-		global $_nav_menu_placeholder, $nav_menu_selected_id;
-		
-		$_nav_menu_placeholder = 0 > $_nav_menu_placeholder ? $_nav_menu_placeholder - 1 : - 1;
-		?>
-		<div class="csnmdiv" id="csnmdiv">
-			
-			<input type="hidden" value="nysba-custom" name="menu-item[<?php echo $_nav_menu_placeholder; ?>][menu-item-type]" />
-			
-			<p id="nysba-menu-item-url-wrap" class="wp-clearfix">
-				<label class="howto" for="nysba-url-menu-item"><?php _e('Shortcode'); ?></label>
-				<input id="nysba-url-menu-item" name="menu-item[<?php echo $_nav_menu_placeholder; ?>][menu-item-url]" type="text" class="code nysba-menu-item-textbox" value="" />
-			
-			<p id="nysba-menu-item-name-wrap" class="wp-clearfix">
-				<label class="howto" for="nysba-title-menu-item"><?php _e('Shortcode Name'); ?></label>
-				<input id="nysba-title-menu-item" name="menu-item[<?php echo $_nav_menu_placeholder; ?>][menu-item-title]" type="text" class="code nysba-menu-item-textbox" />
-			</p>
-			
-			<p class="button-controls wp-clearfix">
-			 <span class="add-to-menu">
-          <input type="submit"<?php wp_nav_menu_disabled_check($nav_menu_selected_id); ?> class="button-secondary submit-add-to-menu right" value="<?php esc_attr_e('Add to Menu'); ?>" name="add-nysba-menu-item" id="submit-csnmdiv" />
-          <span class="spinner"></span>
-      </span>
-			</p>
-		
-		</div>
-		<?php
-		
-	}
-	
 }
