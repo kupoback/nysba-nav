@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://cliquestudios.com/
- * @since             1.0.0
+ * @since             1.0.2
  * @package           Nysba_Nav
  *
  * @wordpress-plugin
