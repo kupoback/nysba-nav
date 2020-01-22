@@ -96,7 +96,7 @@ class Nysba_Form_Fields
 		
 		<p class="description description-wide">Options</p>
 
-		<p class="field-submenu-content-check description description-wide first-level" data-menu-id="<?= $item_id; ?>">
+		<p class="field-submenu-content-check description description-wide" data-menu-id="<?= $item_id; ?>">
 			<label for="edit-menu-item-submenu-content-check-<?php echo $item_id; ?>"><input type="checkbox" id="edit-menu-item-submenu-content-check-<?php echo $item_id; ?>" class="widefat code edit-menu-item-submenu-content-check" name="nysba-submenu-content-check[<?php echo $item_id; ?>]" value="y" <?php checked(
 					$item->nysba_submenu_content_check, 'y'
 				); ?> /><?php esc_attr_e('Add description under the title.', 'nysba-nav'); ?></label>
