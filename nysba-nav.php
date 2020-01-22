@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://cliquestudios.com/
- * @since             1.0.2
+ * @since             1.0.0
  * @package           Nysba_Nav
  *
  * @wordpress-plugin
  * Plugin Name:       NYSBA Navigation
  * Plugin URI:        https://github.com/kupoback/nysba-nav
  * Description:       Custom NYSBA Navigation Control
- * Version:           1.0.2
+ * Version:           1.2.0
  * Author:            Nick Makris | Clique Studios
  * Author URI:        https://cliquestudios.com/
  * License:           GPL-2.0+
