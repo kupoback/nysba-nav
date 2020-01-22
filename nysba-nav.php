@@ -16,7 +16,7 @@
  * Plugin Name:       NYSBA Navigation
  * Plugin URI:        https://github.com/kupoback/nysba-nav
  * Description:       Custom NYSBA Navigation Control
- * Version:           1.0.0
+ * Version:           1.0.2
  * Author:            Nick Makris | Clique Studios
  * Author URI:        https://cliquestudios.com/
  * License:           GPL-2.0+
