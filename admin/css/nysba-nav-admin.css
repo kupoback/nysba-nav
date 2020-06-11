@@ -17,6 +17,9 @@
 .menu-item.menu-item-depth-0 .custom-meta-field {
   display: none;
 }
+.menu-item.menu-item-depth-0 .all-levels {
+  display: block;
+}
 
 .menu-item:not(.menu-item-depth-0) .first-level {
   display: none;

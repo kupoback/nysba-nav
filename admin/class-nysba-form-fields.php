@@ -78,6 +78,9 @@ class Nysba_Form_Fields
 			<small class="help">Appends this class to the anchor tag unlike above, which appends to the list item</small>
 		</p>
 
+		<?php
+		/*
+		?>
 		<p class="field-submenu-columns description description-wide first-level" data-menu-id="<?= $item_id; ?>">
 			<label for="edit-menu-item-submenu-columns-<?php echo $item_id; ?>">
 				<?php esc_attr_e('Number of Sub Menu Columns', 'nysba-nav'); ?>
@@ -88,10 +91,12 @@ class Nysba_Form_Fields
 				</select>
 			</label>
 		</p>
-
+		*/
+		?>
+		
 		<p class="description description-wide">Options</p>
 
-		<p class="field-submenu-content-check description description-wide first-level" data-menu-id="<?= $item_id; ?>">
+		<p class="field-submenu-content-check description description-wide" data-menu-id="<?= $item_id; ?>">
 			<label for="edit-menu-item-submenu-content-check-<?php echo $item_id; ?>"><input type="checkbox" id="edit-menu-item-submenu-content-check-<?php echo $item_id; ?>" class="widefat code edit-menu-item-submenu-content-check" name="nysba-submenu-content-check[<?php echo $item_id; ?>]" value="y" <?php checked(
 					$item->nysba_submenu_content_check, 'y'
 				); ?> /><?php esc_attr_e('Add description under the title.', 'nysba-nav'); ?></label>
@@ -105,6 +110,19 @@ class Nysba_Form_Fields
 		</p>
 		*/ ?>
 
+		<p class="field-submenu-first description description-wide sub-level custom-meta-field" data-menu-id="<?= $item_id; ?>">
+			<label for="edit-menu-item-submenu-first-<?php echo $item_id; ?>">
+				<input type="checkbox" id="edit-menu-item-submenu-first-<?php echo $item_id; ?>" class="widefat code edit-menu-item-submenu-first" name="nysba-submenu-first[<?php echo $item_id; ?>]" value="y" <?php checked(
+					$item->nysba_submenu_first,
+					'y'
+				); ?> />
+				<?php esc_attr_e('First sub-menu child?', 'nysba-nav'); ?>
+			</label>
+		</p>
+		
+		<?php
+		/*
+		
 		<p class="field-submenu-tab-header description description-wide sub-level custom-meta-field" data-menu-id="<?= $item_id; ?>">
 			<label for="edit-menu-item-submenu-tab-header-<?php echo $item_id; ?>">
 				<input type="checkbox" id="edit-menu-item-submenu-tab-header-<?php echo $item_id; ?>" class="widefat code edit-menu-item-submenu-tab-header" name="nysba-submenu-tab-header[<?php echo $item_id; ?>]" value="y" <?php checked(
@@ -130,6 +148,8 @@ class Nysba_Form_Fields
 			<input type="text" id="edit-menu-item-submenu-tab-child-id-<?php echo $item_id; ?>" class="widefat code edit-menu-item-submenu-tab-child-id" value="<?= sanitize_title($item->nysba_submenu_tab_child_id); ?>" name="nysba-submenu-tab-child-id[<?php echo $item_id; ?>]" />
 			<small class="help"><?= __('This ID will be sanitized and should match the title of the parent\'s Navigation Label', 'nysba-nav'); ?></small>
 		</p>
+		*/
+		?>
 
 		<p class="field-submenu-divider description description-wide sub-level custom-meta-field" data-menu-id="<?= $item_id; ?>">
 			<label for="edit-menu-item-submenu-divider-<?php echo $item_id; ?>">
